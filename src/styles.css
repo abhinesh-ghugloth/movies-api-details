@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+body{background-color: rgba(143, 112, 112, 0.096)}
+.avengers {
+    /* height: 30%; */
+    vertical-align: top;
+    width: 32%;
+    display: inline-block;
+    /* margin: 0 auto; */
+    
+}
+.avg-marggin{width: 80%;margin:0 auto;text-align: center;}
+
+.input{border-radius: 12px;text-align: center;}

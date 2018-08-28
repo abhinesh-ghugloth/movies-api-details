@@ -1,0 +1,63 @@
+
+<!-- <div class="col-sm-2 mov">
+ <button type="button" class="btn btn-info btn-lg"
+ (click)=" loadMovies()"> avengers Movie </button> -->
+<!-- </div> -->
+<!-- <div class="col-sm-2 mov">
+ <button type="button" class="btn btn-info btn-lg"
+ (click)=" getOtherMoviess()"> mummy Movie </button>
+</div> -->
+<div class="col-sm-6 mov text-center">
+ <button type="button" class="btn btn-info btn-lg"
+ (click)=" allMovies()"> all Movie </button>
+</div>
+
+ <div class="col-sm-6 input">   
+  
+
+   <form action="" id="filter" class="input">
+     <label> Filter by Movie Names </label>
+     <input class="input" type="text" [(ngModel)]="term" name="movies" #movies=ngModel>
+   </form>
+   </div>
+      <hr/>
+      <br>
+   
+      
+
+    <div class="col-md-4 col-xs-6 bg-secondary" *ngFor="let m of mNames | filter:term">
+        <div class="thumbnail bg-secondary">
+           
+            <img src="{{m.Poster}}" alt="avengers_movies" style="width:100%;height:300px;">
+            <div class="caption text-center bg-success">
+              <p>{{m.Title}}</p>
+            </div>
+            <div class="caption text-center bg-danger">
+                <p>{{m.Year}}</p>
+              </div>
+         
+        </div>
+      </div>
+
+
+
+
+    <div class="col-md-4 col-xs-6" *ngFor="let mum of mumNames | filter:term">
+        <div class="thumbnail">
+           
+            <img src="{{mum.Poster}}" alt="avengers_movies" style="width:100%;height:300px;">
+            <div class="caption text-center bg-success">
+              <p>{{mum.Title}}</p>
+            </div>
+            <div class="caption text-center bg-danger">
+                <p>{{mum.Year}}</p>
+              </div>
+         
+        </div>
+      </div>
+
+  
+  
+
+
+    

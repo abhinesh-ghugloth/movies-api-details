@@ -1,0 +1,13 @@
+.movie-api{width:60%;margin: 0 auto;border:1px solid}
+/* .mov{border:2px solid;} */
+.title{    font-size: 20px;
+    color: black;
+    background-color: brown;
+    width: 83%;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 12%;}
+.titleee{color:rgb(247, 243, 243);text-align: center;margin: 40px;}
+.input{margin-bottom: 30px;}
+.allmovies{width:70%;margin: 0 auto};
+.avengerss{height:20%;display: inline-block;}
